@@ -24,6 +24,6 @@
 
 - [x] Delete a message
 
-- [] Search feature
+- [ ] Search feature
 
-- [] Pop up for editing
+- [ ] Pop up for editing
