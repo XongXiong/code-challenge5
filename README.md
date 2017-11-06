@@ -22,7 +22,7 @@
 
 [x] Add $http/ajax into Angular Service
 
-[] Delete a message
+[x] Delete a message
 
 [] Search feature
 
