@@ -20,7 +20,7 @@
 
 ## Stretch Goals
 
-[] Add $http/ajax into Angular Service
+[x] Add $http/ajax into Angular Service
 
 [] Delete a message
 

@@ -1,0 +1,9 @@
+#inputField {
+    margin: 10px;
+}
+
+.messageTD {
+    max-width: 600px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

@@ -16,13 +16,13 @@
 <body ng-app="app">
 <div class="container jumbotron" ng-controller="MessagesController as mc" ng-init="mc.refreshMessages()">
     <h1>Message Board</h1>
-<div>
+<div id="inputField">
     <button class="btn btn-primary" ng-click="mc.showInput()">Add New Message</button>
     <form ng-show="mc.showAdd" ng-submit="mc.addMessage(mc.newMessage)">
         <label for="name">Name:</label>
         <input type="text" ng-model="mc.newMessage.name" placeholder="Enter Name">
         <label for="message">Message:</label>
-        <input id="messageBox" type="text" ng-model="mc.newMessage.message" placeholder="Enter Message">
+        <input type="text" ng-model="mc.newMessage.message" placeholder="Enter Message">
         <button class="btn btn-primary">Submit Message</button>
     </form>
 </div>
@@ -38,7 +38,7 @@
         <tr ng-repeat="message in mc.messages.data">
             <td>{{$index + 1}}</td>
             <td>{{message.name}}</td>
-            <td>{{message.message}}</td>
+            <td class="messageTD">{{message.message}}</td>
         </tr>
     </tbody>
 </table>
