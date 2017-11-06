@@ -20,4 +20,9 @@ app.controller('MessagesController', ['MessagesService', function (MessagesServi
         mc.refreshMessages();
     };
 
+    mc.deleteData = function (messageId) {
+        console.log(messageId);
+        MessagesService.deleteData(messageId);
+        mc.refreshMessages();
+    };
 }]);

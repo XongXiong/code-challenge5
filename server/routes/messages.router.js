@@ -31,4 +31,16 @@ router.post('/', function (req, res) {
     });
 });
 
+router.delete('/:id', function (req, res) {
+    var messageId = req.params.id;
+    Message.findByIdAndRemove({ '_id': messageId }, function (err, data) {
+        if (err) {
+            console.log('Error', err);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(200);
+        };
+    });
+});
+
 module.exports = router;
